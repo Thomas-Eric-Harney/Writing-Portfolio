@@ -1,0 +1,68 @@
+/* Apply Gentium Book Plus to the body text */
+body {
+    background-color: #eceae0;
+    color: #333;
+    font-family: 'Gentium Book Plus', serif;
+    line-height: 1.6;
+    text-align: center; /* Center-aligns all text inside the body */
+}
+.night-mode {
+    background-color: #1e1e1e; /* Dark gray */
+    color: #f0f0f0;
+}
+
+.night-mode a {
+    color: #ffb86c; /* Accent color for links */
+}
+
+/* Apply IM FELL PICA DW to headings (e.g., h1, h2) */
+h1, h2 {
+    font-family: 'IM Fell Pica', serif;
+}
+
+/* Apply IM FELL ENGLISH SC to subheadings or sections that need subheading style */
+h3, nav, footer {
+    font-family: 'IM Fell English SC', serif;
+}
+
+/* Navigation style adjustments */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filigree-box {
+    border: 5px solid #f1b86c;
+    outline: 5px dashed rgba(241, 184, 108, 0.8); /* Dashed inlay style */
+    border-radius: 20px;
+    border-style: groove;
+    padding: 25px;
+    margin: 20px auto;
+    width: 60%;
+    max-width: 800px;
+    background: transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: 'Gentium Book Plus', serif;
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #f1b86c; /* Earthy orange text color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* Footer style */
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+}

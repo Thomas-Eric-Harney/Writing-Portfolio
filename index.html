@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Eric Harney</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=IM+Fell+English+SC&family=IM+Fell+Pica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="filigree-box">
+            <h1>Thomas Eric Harney</h1>
+        </div>
+        <button id="theme-toggle">Night</button>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#works">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>Hello</h2>
+            <p>This is my Writing Portfolio and Project Repository. Please visit Bio to learn about me.</p>
+        </section>
+
+        <!-- My Works Section -->
+        <section id="Projects">
+            <h2>Projects</h2>
+            <p>Below is a list of the projects hosted here. For general summaries and context please vist Projects:</p>
+            <ul>
+                <li><a href="qeret.html">Qeret: A City Module</a></li>
+                <li><a href="endless-summer.html">Endless Summer</a></li>
+                <li><a href="kesh.html">Kesh: Age of Splendor</a></li>
+                <li><a href="song-of-kali-dari.html">Song of Kali-Dari</a></li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out for collaborations or inquiries.</p>
+            <form id="contact-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+            <div id="form-response" style="display: none;"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Thomas Eric Harney. All rights reserved.</p>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+    <script src="theme-toggle.js"></script>
+    
+</body>
+</html>
