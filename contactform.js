@@ -20,9 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch((error) => {
                 responseDiv.style.display = 'block';
-                responseDiv.textContent = 'An error occurred. Please try again later.';
+                responseDiv.textContent = `An error occurred: ${error.text || error.message}. Please try again later.`;
                 responseDiv.style.color = 'red';
                 console.error('EmailJS Error:', error);
             });
+            
     });
 });
