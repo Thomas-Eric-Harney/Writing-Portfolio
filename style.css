@@ -25,10 +25,71 @@ h3, nav, footer {
     font-family: 'IM Fell English SC', serif;
 }
 
-/* Navigation style adjustments */
+/* Default list styles for unordered lists */
+ul {
+    padding-left: 0; /* Remove padding */
+    text-align: center; /* Center align all lists by default */
+}
+
+/* Navigation-specific styles */
 nav ul {
-    list-style: none;
+    list-style: none; /* Remove bullets from navigation */
     padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Center align project lists with custom triangle bullets */
+.triangle-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+    text-align: center;
+}
+
+.triangle-list li {
+    display: flex; /* Use flexbox for perfect alignment */
+    align-items: center; /* Vertically center-align items */
+}
+
+.triangle-list li::before {
+    content: "▲"; /* Upright triangle */
+    color: #f1b86c; /* Earthy orange */
+    font-size: 1em;
+    margin-right: 10px; /* Space between the triangle and text */
+    display: inline-block; /* Keeps the bullet aligned with text */
+}
+
+
+
+/* Footer style */
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+/* Center align unordered lists */
+ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove padding */
+    text-align: center; /* Center align the list */
+}
+
+ul li {
+    display: block; /* Each list item on its own line */
+    margin: 5px 0; /* Vertical spacing */
+    text-align: left; /* Align text properly */
+    margin-left: auto; /* Centering the items */
+    margin-right: auto;
+    width: fit-content; /* Fit the content width */
+    position: relative; /* Required for custom bullets */
 }
 
 .filigree-box {
@@ -47,22 +108,26 @@ nav ul {
     position: relative;
     overflow: hidden;
 }
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+/* Default Day mode button styles */
+#theme-toggle {
+    position: fixed; /* Stick to the bottom */
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #333; /* Dark gray background in Day mode */
+    color: #f1b86c; /* Earthy orange text in Day mode */
+    border: 2px solid #f1b86c;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
 }
 
-nav ul li a {
-    color: #f1b86c; /* Earthy orange text color */
-    text-decoration: none;
-    font-weight: bold;
+/* Night mode button styles */
+.night-mode #theme-toggle {
+    background-color: #f1b86c; /* Earthy orange background in Night mode */
+    color: #333; /* Dark gray text in Night mode */
+    border: 2px solid #333; /* Dark border */
 }
 
 
-
-/* Footer style */
-footer {
-    margin-top: 20px;
-    font-size: 0.8em;
-}

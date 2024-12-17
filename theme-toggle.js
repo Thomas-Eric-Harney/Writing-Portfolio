@@ -1,4 +1,3 @@
-// Select the toggle button
 document.addEventListener("DOMContentLoaded", () => {
     const toggleButton = document.getElementById('theme-toggle');
     if (!toggleButton) {
@@ -6,11 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
+    // Set Night Mode as the default
+    if (!localStorage.getItem('theme')) {
+        localStorage.setItem('theme', 'night-mode'); // Default theme
+    }
+
     // Load the saved theme from localStorage
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'night-mode') {
         document.body.classList.add('night-mode');
         toggleButton.textContent = 'Day';
+    } else {
+        toggleButton.textContent = 'Night';
     }
 
     // Toggle theme and save preference

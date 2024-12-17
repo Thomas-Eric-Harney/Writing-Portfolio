@@ -16,14 +16,14 @@
         <button id="theme-toggle">Night</button>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#bio">Bio</a></li>
-            <li><a href="#works">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+</nav>
+
 
     <!-- Main Content -->
     <main>
@@ -34,49 +34,22 @@
         </section>
 
         <!-- My Works Section -->
-        <section id="Projects">
-            <h2>Projects</h2>
-            <p>Below is a list of the projects hosted here. For general summaries and context please vist Projects:</p>
-            <ul>
-                <li><a href="qeret.html">Qeret: A City Module</a></li>
-                <li><a href="endless-summer.html">Endless Summer</a></li>
-                <li><a href="kesh.html">Kesh: Age of Splendor</a></li>
-                <li><a href="song-of-kali-dari.html">Song of Kali-Dari</a></li>
-            </ul>
+<section id="Projects">
+    <h2>Portfolio Content</h2>
+    <p>Below is a list of the projects hosted here. For general summaries and context please visit Projects:</p>
+    <ul class="triangle-list"> <!-- Add the class here -->
+        <li><a href="qeret.html">Qeret: A City Module</a></li>
+        <li><a href="endless-summer.html">Endless Summer</a></li>
+        <li><a href="kesh.html">Kesh: Age of Splendor</a></li>
+        <li><a href="song-of-kali-dari.html">Song of Kali-Dari</a></li>
+    </ul>
         </section>
+
 
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
-            <p>Feel free to reach out for collaborations or inquiries.</p>
-            <form id="contact-form">
-                <label for="name">Name:</label><br>
-                <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    autocomplete="name" 
-                    required><br>
-        
-                <label for="email">Email:</label><br>
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    autocomplete="email" 
-                    required><br>
-        
-                <label for="message">Message:</label><br>
-                <textarea 
-                    id="message" 
-                    name="message" 
-                    rows="4" 
-                    autocomplete="off" 
-                    required></textarea><br>
-        
-                <button type="submit">Send</button>
-            </form>
-            <div id="form-response" style="display: none;"></div>
+            <p>Feel free to reach out for collaborations or inquiries: thomas.eric.harney@gmail.com</p>
         </section>
     </main>
 
@@ -86,10 +59,6 @@
         <p><a href="#top">Back to Top</a></p>
     </footer>
     <script src="theme-toggle.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.js"></script>
-    <script>
-        emailjs.init('GePeLqBUf2_7XBYqG'); // Replace 'YOUR_PUBLIC_USER_ID' with your actual User ID
-    </script>
     
 </body>
 </html>
