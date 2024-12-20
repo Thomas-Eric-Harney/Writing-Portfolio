@@ -18,6 +18,7 @@ body {
 /* Apply IM FELL PICA DW to headings (e.g., h1, h2) */
 h1, h2 {
     font-family: 'IM Fell Pica', serif;
+    text-align: center;
 }
 
 /* Apply IM FELL ENGLISH SC to subheadings or sections that need subheading style */
@@ -129,5 +130,21 @@ ul li {
     color: #333; /* Dark gray text in Night mode */
     border: 2px solid #333; /* Dark border */
 }
+main {
+    max-width: 800px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Add spacing for readability */
+}
 
+main.left-aligned {
+    text-align: left; /* Left-align content */
+}
+
+main.center-aligned {
+    text-align: center; /* Center-align content */
+}
+
+p {
+    text-indent: 2em; /* Adjust the value as needed */
+}
 
