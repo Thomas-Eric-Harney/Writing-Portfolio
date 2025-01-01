@@ -69,6 +69,60 @@ nav ul li a {
     display: inline-block; /* Keeps the bullet aligned with text */
 }
 
+/* Reset list styling for narrative-pitch */
+.narrative-pitch ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    text-align: left; /* Ensure left alignment */
+}
+
+/* Main triangle list in narrative-pitch */
+.narrative-pitch .triangle-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    text-align: left; /* Align text left */
+}
+
+.narrative-pitch .triangle-list li {
+    position: relative; /* Enable custom bullet positioning */
+    margin: 0.5em 0; /* Vertical spacing */
+    padding-left: 1.5em; /* Indent text for main bullets */
+    line-height: 1.6; /* Adjust spacing for readability */
+}
+
+.narrative-pitch .triangle-list li::before {
+    content: "▲"; /* Main bullet */
+    position: absolute; /* Position bullet relative to text */
+    left: 0; /* Align bullet to the far left */
+    top: 0.2em; /* Vertically align with text */
+    color: #f1b86c; /* Earthy orange bullet color */
+    font-size: 1em; /* Standard bullet size */
+}
+
+/* Nested sub-list styling for narrative-pitch */
+.narrative-pitch .triangle-list ul {
+    margin-left: 1.5em; /* Indent sub-lists */
+    padding-left: 0; /* Reset padding for sub-lists */
+    list-style: none; /* Remove default bullets for sub-lists */
+}
+
+.narrative-pitch .triangle-list ul li {
+    position: relative; /* Enable custom bullet positioning */
+    margin: 0.5em 0; /* Vertical spacing for sub-list items */
+    padding-left: 1.5em; /* Indent text for sub-bullets */
+}
+
+.narrative-pitch .triangle-list ul li::before {
+    content: "▶"; /* Sub-bullet */
+    position: absolute; /* Position bullet relative to text */
+    left: 0; /* Align bullet to the far left */
+    top: 0.2em; /* Vertically align with text */
+    color: #f1b86c; /* Match parent bullet color */
+    font-size: 0.9em; /* Slightly smaller size for sub-bullets */
+}
+
 
 
 /* Footer style */
@@ -146,5 +200,29 @@ main.center-aligned {
 
 p {
     text-indent: 2em; /* Adjust the value as needed */
+}
+
+/* Disable text indentation on pages with the no-indent class */
+.no-indent p {
+    text-indent: 0 !important;
+}
+
+/* Left-align all text content on the Qereti Codex page */
+#qereti-codex {
+    text-align: left;
+}
+
+/* Maintain left-aligned h3 and center-aligned h2 */
+#qereti-codex h3 {
+    text-align: left;
+}
+
+#qereti-codex h2 {
+    text-align: center;
+}
+
+/* Remove text indentation on the Qereti Codex page */
+#qereti-codex p {
+    text-indent: 0; /* Remove indentation */
 }
 
