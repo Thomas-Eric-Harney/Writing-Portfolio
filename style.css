@@ -48,25 +48,26 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
-/* Center align project lists with custom triangle bullets */
 .triangle-list {
     list-style: none; /* Remove default bullets */
-    padding-left: 0;
-    text-align: center;
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove extra margins */
+    text-align: left; /* Ensure text alignment is consistent */
 }
 
 .triangle-list li {
-    display: flex; /* Use flexbox for perfect alignment */
-    align-items: center; /* Vertically center-align items */
+    display: flex; /* Use flexbox for alignment */
+    align-items: flex-start; /* Align the bullet with the start of the text */
+    gap: 0.5em; /* Add spacing between bullet and text */
+    line-height: 1.6; /* Ensure consistent line height */
+    margin-bottom: 0.5em; /* Add spacing between items */
 }
 
 .triangle-list li::before {
-    content: "▲"; /* Upright triangle */
-    color: #f1b86c; /* Earthy orange */
-    font-size: 1em;
-    margin-right: 10px; /* Space between the triangle and text */
-    display: inline-block; /* Keeps the bullet aligned with text */
+    content: "▲"; /* Triangle bullet */
+    color: #f1b86c; /* Bullet color */
+    font-size: 1em; /* Match text size */
+    flex-shrink: 0; /* Prevent the bullet from shrinking */
 }
 
 /* Reset list styling for narrative-pitch */
