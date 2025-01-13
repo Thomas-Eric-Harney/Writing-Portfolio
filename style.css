@@ -198,6 +198,11 @@ main.left-aligned {
 main.center-aligned {
     text-align: center; /* Center-align content */
 }
+p.center-aligned {
+    text-align: center;
+    text-indent: 0;
+}
+
 
 p {
     text-indent: 2em; /* Adjust the value as needed */
