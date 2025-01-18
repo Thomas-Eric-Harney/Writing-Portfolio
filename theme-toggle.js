@@ -31,3 +31,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// Collapsible Updates Section
+document.addEventListener("DOMContentLoaded", () => {
+    const updatesHeading = document.getElementById("updates-heading");
+    const updatesContainer = document.getElementById("updates-container");
+
+    if (updatesHeading && updatesContainer) {
+        updatesHeading.addEventListener("click", () => {
+            updatesContainer.classList.toggle("expanded");
+            updatesContainer.classList.toggle("collapsed");
+        });
+    } else {
+        console.error("Updates heading or container not found.");
+    }
+});

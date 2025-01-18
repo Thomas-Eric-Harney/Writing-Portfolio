@@ -1,30 +1,63 @@
 /* Apply Gentium Book Plus to the body text */
 body {
     background-color: #eceae0;
-    color: #333;
+    color: #222;
     font-family: 'Gentium Book Plus', serif;
-    line-height: 1.6;
-    text-align: center; /* Center-aligns all text inside the body */
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
 }
+
+p {
+    text-indent: 2em;
+    margin-bottom: 1.2em;
+}
+
+main {
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+h1 {
+    font-family: 'IM Fell Pica', serif;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-family: 'IM Fell English SC', serif;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0.4em;
+}
+
 .night-mode {
-    background-color: #1e1e1e; /* Dark gray */
-    color: #f0f0f0;
+    background-color: #1a1a1a; /* Dark gray */
+    color: #e0e0e0;
 }
 
 .night-mode a {
-    color: #ffb86c; /* Accent color for links */
+    color: #ff9933; /* Accent color for links */
 }
 
-/* Apply IM FELL PICA DW to headings (e.g., h1, h2) */
-h1, h2 {
-    font-family: 'IM Fell Pica', serif;
-    text-align: center;
+.night-mode table {
+    border: 1px solid #e0e0e0 !important;
 }
 
-/* Apply IM FELL ENGLISH SC to subheadings or sections that need subheading style */
-h3, nav, footer {
-    font-family: 'IM Fell English SC', serif;
+.night-mode th, .night-mode td {
+    border: 1px solid #e0e0e0 !important;
 }
+
 
 /* Default list styles for unordered lists */
 ul {
@@ -206,9 +239,7 @@ p.center-aligned {
 }
 
 
-p {
-    text-indent: 2em; /* Adjust the value as needed */
-}
+
 
 /* Disable text indentation on pages with the no-indent class */
 .no-indent p {
@@ -262,4 +293,50 @@ p {
     display: flex;
     justify-content: center; /* Centers the image horizontally */
     align-items: center; /* Centers content vertically if needed */
+}
+
+.timeline {
+    position: relative;
+    margin: 0;
+    padding-left: 0px; /* Space for vertical line */
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: none;
+}
+
+.timeline-content {
+    background: #eceae0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative; /* Allows alignment with ::before */
+    z-index: 2; /* Content above the line */
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+#updates-container {
+    display: none; /* Hidden by default */
+    overflow: hidden; /* Prevent content from overflowing */
+    margin-top: 10px; /* Add spacing from the heading */
+}
+
+#updates-container.expanded {
+    display: block; /* Show when expanded */
+}
+
+#updates-heading {
+    cursor: pointer; /* Indicate interactivity */
+    text-decoration: underline; /* Optional: Highlight clickable text */
+    color: #f1b86c; /* Accent color for heading */
 }
