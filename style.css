@@ -325,6 +325,44 @@ p.center-aligned {
     margin-bottom: 5px;
 }
 
+/* Night Mode for the Updates Section */
+.night-mode .timeline {
+    background-color: transparent; /* Ensure the overall timeline section is transparent */
+}
+
+/* Night Mode for Timeline Items */
+.night-mode .timeline-item {
+    background-color: #1e1e1e; /* Dark gray matching Night Mode background */
+    color: #f0f0f0; /* Light gray for text visibility */
+    border: none; /* Remove any borders */
+    padding: 10px; /* Add consistent padding */
+    margin-bottom: 10px; /* Space between items */
+    border-radius: 5px; /* Rounded edges for a clean look */
+}
+
+/* Specific Styling for Text in Timeline Items */
+.night-mode .timeline-item .timeline-date {
+    color: #ffa726; /* Orange accent for dates */
+    font-weight: bold; /* Highlight the date */
+    margin: 0; /* Ensure no unexpected margins */
+    padding: 0; /* Remove padding that could create box effects */
+}
+
+.night-mode .timeline-item .timeline-content {
+    color: #f0f0f0; /* Light text for content readability */
+    background: none; /* Remove any inherited background color */
+    margin: 0; /* Prevent margin inconsistencies */
+    padding: 0; /* Prevent padding creating boxes */
+}
+
+/* Optional: Adjust line height for consistency */
+.night-mode .timeline-item .timeline-content,
+.night-mode .timeline-item .timeline-date {
+    line-height: 1.5; /* Improve readability */
+}
+
+
+
 #updates-container {
     display: none; /* Hidden by default */
     overflow: hidden; /* Prevent content from overflowing */
