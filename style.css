@@ -61,8 +61,9 @@ h3 {
 
 /* Default list styles for unordered lists */
 ul {
-    padding-left: 0; /* Remove padding */
-    text-align: center; /* Center align all lists by default */
+    padding-left: 40px; /* Restore default indentation */
+    text-align: left;   /* Restore default alignment */
+    list-style: disc;  
 }
 
 /* Navigation-specific styles */
@@ -82,25 +83,28 @@ nav ul li a {
     font-weight: bold;
 }
 .triangle-list {
-    list-style: none; /* Remove default bullets */
-    padding: 0; /* Remove extra padding */
-    margin: 0; /* Remove extra margins */
-    text-align: left; /* Ensure text alignment is consistent */
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: max-content;      /* Center the list block */
 }
 
 .triangle-list li {
-    display: flex; /* Use flexbox for alignment */
-    align-items: flex-start; /* Align the bullet with the start of the text */
-    gap: 0.5em; /* Add spacing between bullet and text */
-    line-height: 1.6; /* Ensure consistent line height */
-    margin-bottom: 0.5em; /* Add spacing between items */
+    display: block;          /* Stack items vertically */
+    position: relative;
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+    line-height: 1.6;
+    text-align: left;        /* Text left within the centered block */
 }
 
 .triangle-list li::before {
-    content: "▲"; /* Triangle bullet */
-    color: #f1b86c; /* Bullet color */
-    font-size: 1em; /* Match text size */
-    flex-shrink: 0; /* Prevent the bullet from shrinking */
+    content: "▲";
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    color: #f1b86c;
+    font-size: 1em;
 }
 
 /* Reset list styling for narrative-pitch */
@@ -166,22 +170,6 @@ footer {
     text-align: center;
     }
 
-/* Center align unordered lists */
-ul {
-    list-style: none; /* Remove default bullets */
-    padding-left: 0; /* Remove padding */
-    text-align: center; /* Center align the list */
-}
-
-ul li {
-    display: block; /* Each list item on its own line */
-    margin: 5px 0; /* Vertical spacing */
-    text-align: left; /* Align text properly */
-    margin-left: auto; /* Centering the items */
-    margin-right: auto;
-    width: fit-content; /* Fit the content width */
-    position: relative; /* Required for custom bullets */
-}
 
 .filigree-box {
     border: 5px solid #f1b86c;
@@ -378,4 +366,10 @@ p.center-aligned {
     cursor: pointer; /* Indicate interactivity */
     text-decoration: underline; /* Optional: Highlight clickable text */
     color: #f1b86c; /* Accent color for heading */
+}
+
+.left-triangle-list {
+    margin: 0;           /* Remove auto-centering */
+    width: auto;         /* Let it fill the container */
+    text-align: left;    /* Left-align the list block */
 }
