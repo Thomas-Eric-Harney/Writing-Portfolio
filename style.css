@@ -253,6 +253,11 @@ p.center-aligned {
     text-indent: 0; /* Remove indentation */
 }
 
+/* Remove text indentation in the cast section */
+#cast p {
+    text-indent: 0; /* Remove indentation */
+}
+
 .section-box {
     border: 5px solid #f1b86c; /* Solid border */
     outline: 5px dashed rgba(241, 184, 108, 0.8); /* Dashed inlay */
